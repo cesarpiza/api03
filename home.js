@@ -12,6 +12,7 @@ import { useFocusEffect } from '@react-navigation/native';
 
 export default function Home() {
 
+    // para rodar a api no emulador, usando node/terminal como servidor, é preciso usar o ip do computador. Agora se for para web, use loscalhost... lembrando que não da para usar a mesma porta. Nesse caso a porta 8080 estava disponível.
     const url = 'http://192.168.0.103:8080/api';
     const [name, setName] = useState('');
     const [city, setCity] = useState('');
